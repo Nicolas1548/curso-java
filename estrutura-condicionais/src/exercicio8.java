@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-void main() {
-	Locale.setDefault(Locale.US);
+public static void main(String[] args) {
+	//Locale.setDefault(Locale.US);
 	Scanner sc = new Scanner(System.in);
 
 	double salario = sc.nextDouble();

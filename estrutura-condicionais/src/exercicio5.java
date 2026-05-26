@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-void main() {
+public static void main(String[] args) {
 	double cod, quant;
 
 	Scanner sc = new Scanner(System.in);
