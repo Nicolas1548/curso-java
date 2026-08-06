@@ -22,7 +22,7 @@ public class Conta {
 	public double depositar(double valor) {
 
 		if (valor <= 0) {
-			System.out.print("Não e possivel depositar esse valor!!");
+			System.out.println("Não e possivel depositar esse valor!!");
 			return saldo;
 		}
 		return saldo += valor;
