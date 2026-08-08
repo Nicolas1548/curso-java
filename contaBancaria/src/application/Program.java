@@ -50,23 +50,6 @@ public class Program {
 			}
 		}
 
-		/*
-		 * System.out.print("Voce gostaria de realizar um deposito, y/n? "); char
-		 * resposta = sc.next().charAt(0);
-		 * 
-		 * if (resposta == 'y') { System.out.println("Qual valor deseja depositar? ");
-		 * double depositoNovo = sc.nextDouble(); conta = new Conta(titular, saldo,
-		 * depositoNovo); } else { conta = new Conta(titular, saldo); }
-		 * 
-		 * System.out.println(""); System.out.println(conta);
-		 * 
-		 * System.out.println(""); System.out.print("Deseja realizar um saque, y/n? ");
-		 * char saqueResposta = sc.next().charAt(0); if (saqueResposta == 'y') {
-		 * System.out.print("Qual valor deseja sacar? "); double saque =
-		 * sc.nextDouble(); conta.sacar(saque); }
-		 * 
-		 * System.out.println("Atualização bancaria: "); System.out.println(conta);
-		 */
 
 		sc.close();
 	}
