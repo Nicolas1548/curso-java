@@ -38,7 +38,7 @@ public class Program {
 		}
 
 		double mediaAltura = alturaTotal / n;
-		double calculo = (Double.valueOf(menores) / n) * 100;
+		double calculo = (Double.valueOf(menores) / n) * 100.0;
 
 		System.out.printf("Altura média: %.2f\n ", mediaAltura);
 		System.out.printf("Pessoas com menos de 16 anos: %.1f%%\n", calculo);
