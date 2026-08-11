@@ -10,7 +10,7 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 
 		double maior = 0;
-		double alturaMedia = 0;
+		double somaAlturasF = 0;
 		int pessoa = 0;
 		System.out.print("Quantas pessoas serao digitadas?");
 		int n = sc.nextInt();
@@ -20,20 +20,11 @@ public class Program {
 
 		for (int i = 0; i < n; i++) {
 			pessoa++;
-			System.out.print("Altura da " + pessoa + "a pessoa:");
+			System.out.print("Altura da " + pessoa + "a pessoa: ");
 			altura[i] = sc.nextDouble();
-			System.out.print("Genero da " + pessoa + "a pessoa:");
+			System.out.print("Genero da " + pessoa + "a pessoa: ");
 			genero[i] = sc.next().charAt(0);
 		}
-
-		System.out.print("\nMaior altura = ");
-		for (int i = 0; i < n; i++) {
-
-			if (maior < altura[i]) {
-				maior = altura[i];
-			}
-		}
-		System.out.printf("%.2f", maior);
 
 		double menor = altura[0];
 		System.out.print("\nMenor altura = ");
@@ -45,15 +36,24 @@ public class Program {
 		}
 		System.out.printf("%.2f", menor);
 
+		System.out.print("\nMaior altura = ");
+		for (int i = 0; i < n; i++) {
+
+			if (maior < altura[i]) {
+				maior = altura[i];
+			}
+		}
+		System.out.printf("%.2f", maior);
+
 		System.out.print("\nMedia das alturas das mulheres = ");
 		int quantF = 0;
 		for (int i = 0; i < n; i++) {
 			if (genero[i] == 'F') {
-				alturaMedia += altura[i];
+				somaAlturasF += altura[i];
 				quantF++;
 			}
 		}
-		double calculo = alturaMedia / quantF;
+		double calculo = somaAlturasF / quantF;
 		System.out.printf("%.2f", calculo);
 
 		System.out.print("\nNumero de homens = ");
