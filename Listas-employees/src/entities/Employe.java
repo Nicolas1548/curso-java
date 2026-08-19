@@ -8,6 +8,7 @@ public class Employe {
 	public Employe() {
 
 	}
+
 	public Employe(Integer id, String name, Double salary) {
 		this.id = id;
 		this.name = name;
@@ -34,12 +35,12 @@ public class Employe {
 		return salary;
 	}
 
-	public void setSalary(Double salary) {
-		this.salary = salary;
+	public void aumentoSalario(double porcentagem) {
+		salary += (salary * porcentagem / 100);
+		return;
 	}
 
-	@Override
 	public String toString() {
-		return "\n" + id + ", " + name + ", " + salary;
+		return id + ", " + name + ", " + salary;
 	}
 }
